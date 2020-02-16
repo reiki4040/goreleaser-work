@@ -38,7 +38,6 @@ brews:
     github:
       owner: reiki4040
       name: goreleaser-work
-    folder: homebrew-tap
     homepage: "https://github.com/reiki4040/goreleaser-work"
     install: |
       bin.install "goreleaser-work"
