@@ -18,6 +18,7 @@ builds:
       - darwin
     goarch:
       - amd64
+      - arm64
 archives:
   - name_template: '{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}'
     replacements:
@@ -35,7 +36,7 @@ release:
 # homebrew
 brews:
   - description: "show version info only."
-    github:
+    tap:
       owner: reiki4040
       name: goreleaser-work
     homepage: "https://github.com/reiki4040/goreleaser-work"
