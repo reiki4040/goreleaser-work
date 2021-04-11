@@ -39,6 +39,7 @@ brews:
     tap:
       owner: reiki4040
       name: goreleaser-work
+      token: "{{ .Env.GITHUB_TOKEN }}"
     homepage: "https://github.com/reiki4040/goreleaser-work"
     install: |
       bin.install "goreleaser-work"
