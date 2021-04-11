@@ -35,7 +35,7 @@ release:
 # homebrew
 brews:
   - description: "show version info only."
-    github:
+    tap:
       owner: reiki4040
       name: goreleaser-work
     homepage: "https://github.com/reiki4040/goreleaser-work"
