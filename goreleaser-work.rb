@@ -5,24 +5,24 @@
 class GoreleaserWork < Formula
   desc "show version info only."
   homepage "https://github.com/reiki4040/goreleaser-work"
-  version "0.2.0"
+  version "0.2.1"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/reiki4040/goreleaser-work/releases/download/v0.2.0/goreleaser-work_darwin_x86_64.tar.gz"
-    sha256 "194bd8ecd81f9f68d8bd3a28d8ea663bf09570859aee6e40b6527a57fe3072d5"
+    url "https://github.com/reiki4040/goreleaser-work/releases/download/v0.2.1/goreleaser-work_darwin_x86_64.tar.gz"
+    sha256 "9d1c8c7fb2fe1eca1e48f5e0a9f2d4b77de26ccc0600afc7e97f6e0074d4c205"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/reiki4040/goreleaser-work/releases/download/v0.2.0/goreleaser-work_darwin_arm64.tar.gz"
-    sha256 "1d6dc82ece6eaec87fe5cee0f67b33e07f02e02279450249974476e4b9bc0199"
+    url "https://github.com/reiki4040/goreleaser-work/releases/download/v0.2.1/goreleaser-work_darwin_arm64.tar.gz"
+    sha256 "f60e623189860225fc88d4c68a8c279a2f93b4c7df2df7aab316bbf6461c77eb"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/reiki4040/goreleaser-work/releases/download/v0.2.0/goreleaser-work_linux_x86_64.tar.gz"
-    sha256 "1de8a805ed685f699009a7c143f4af4ef325f336313f43a27388ca6fbaed0231"
+    url "https://github.com/reiki4040/goreleaser-work/releases/download/v0.2.1/goreleaser-work_linux_x86_64.tar.gz"
+    sha256 "31717aaa85403d1aae47a14d1f8694c7c1fe45889805da5124f6974f35a176d2"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/reiki4040/goreleaser-work/releases/download/v0.2.0/goreleaser-work_linux_arm64.tar.gz"
-    sha256 "45d27cdb0ad381e5e51823c551136873ad84190f47338476e2bd82d1e2eba74b"
+    url "https://github.com/reiki4040/goreleaser-work/releases/download/v0.2.1/goreleaser-work_linux_arm64.tar.gz"
+    sha256 "f77a6017d407a1fad228bcbd9978476a7f35819e4910794b2337e0d536907eab"
   end
 
   def install
