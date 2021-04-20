@@ -38,8 +38,8 @@ brews:
   - description: "show version info only."
     tap:
       owner: reiki4040
-      name: goreleaser-work
-      token: "{{ .Env.GITHUB_TOKEN }}"
+      name: homebrew-tap
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
     homepage: "https://github.com/reiki4040/goreleaser-work"
     install: |
       bin.install "goreleaser-work"
