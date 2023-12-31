@@ -24,21 +24,20 @@ archives:
       {{ .ProjectName }}_
       {{- .Os }}_
       {{- if eq .Arch "amd64" }}x86_64
-      {{- else if eq .Arch "386" }}i386
       {{- else }}{{ .Arch }}{{ end }}
     format_overrides:
       - goos: windows
         format: zip
 release:
   prerelease: auto
-
+  
 # homebrew
 brews:
   - description: "show version info only."
     tap:
       owner: reiki4040
       name: homebrew-tap
-      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
+      token: "{{ .Env.GH_PAT }}"
     homepage: "https://github.com/reiki4040/goreleaser-work"
     install: |
       bin.install "goreleaser-work"

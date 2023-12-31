@@ -1,3 +1,3 @@
 module github.com/reiki4040/goreleaser-work
 
-go 1.19
+go 1.21
